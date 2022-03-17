@@ -51,6 +51,9 @@ ul li {
     color: #353535;
 }
 
+
+/* ==========header css========== */
+
 .header .navbar ul li {
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
@@ -65,4 +68,60 @@ ul li {
 
 .header .navbar ul li a:hover {
     color: #0872b9;
+}
+
+
+/* ==========banner css========== */
+
+.banner {
+    background-image: url(../img/banner.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+}
+
+.banner::after {
+    position: absolute;
+    content: '';
+    background-color: rgb(54, 45, 49, .7);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.banner .content {
+    position: relative;
+    z-index: 3;
+    text-align: right;
+}
+
+.banner .content .heading {
+    font-family: 'Oswald', sans-serif;
+    color: #fff;
+    text-transform: capitalize;
+}
+
+.banner .content .heading.top {
+    font-size: 26px;
+    font-weight: 400;
+    margin-top: 88px;
+}
+
+.banner .content .heading.bottom {
+    font-size: 34px;
+    font-weight: 700;
+    margin: 16px 0 27px 0;
+}
+
+.banner .content .para {
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    font-size: 11px;
+    font-weight: 400;
+    margin-bottom: 34px;
+    line-height: 24px;
 }
