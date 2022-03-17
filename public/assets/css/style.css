@@ -1,0 +1,57 @@
+/* ==========default css========== */
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+img {
+    vertical-align: middle;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul li {
+    list-style-type: none;
+    display: inline-block;
+}
+
+
+/* ==========topbar css========== */
+
+.topbar {
+    background-color: #0872b9;
+}
+
+.topbar .row .content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.topbar .welcome_text {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #fff;
+    line-height: 30px;
+}
+
+
+/* .topbar .social_links ul {
+    margin-top: 10px;
+} */
+
+.topbar .social_links ul li a {
+    margin-right: 25px;
+    color: #e7e7e7;
+    font-size: 16px;
+    line-height: 30px;
+    transition: all linear .3s;
+}
+
+.topbar .social_links ul li a:hover {
+    color: #353535;
+}
