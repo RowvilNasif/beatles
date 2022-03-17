@@ -39,11 +39,6 @@ ul li {
     line-height: 30px;
 }
 
-
-/* .topbar .social_links ul {
-    margin-top: 10px;
-} */
-
 .topbar .social_links ul li a {
     margin-right: 25px;
     color: #e7e7e7;
@@ -54,4 +49,20 @@ ul li {
 
 .topbar .social_links ul li a:hover {
     color: #353535;
+}
+
+.header .navbar ul li {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    text-transform: capitalize;
+}
+
+.header .navbar ul li a {
+    color: #353535;
+    transition: all linear .3s;
+}
+
+.header .navbar ul li a:hover {
+    color: #0872b9;
 }
