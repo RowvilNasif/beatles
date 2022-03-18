@@ -243,6 +243,10 @@ ul {
     margin-top: 60px;
 }
 
+.about .content {
+    position: relative;
+}
+
 .about .content .blue_layer {
     margin-top: 45px;
     position: absolute;
@@ -272,15 +276,11 @@ ul {
     top: 3%;
 }
 
-.about .content .para {
+.about .para {
     font-family: 'Open Sans', sans-serif;
     color: #555;
     font-size: 13px;
     font-weight: 400;
     margin-top: 89px;
     line-height: 24px;
-}
-
-.about .content {
-    position: relative;
 }
