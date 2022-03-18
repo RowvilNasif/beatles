@@ -243,22 +243,18 @@ ul {
     margin-top: 60px;
 }
 
-.about .content {
-    position: relative;
-}
-
-.about .content .blue_layer {
+.about .blue_layer {
     margin-top: 45px;
     position: absolute;
     content: '';
-    width: 100%;
+    width: 36%;
     height: 265px;
     background-color: #0872b9;
     z-index: 2;
     clip-path: polygon(0 0, 74% 0, 95% 100%, 0% 100%);
 }
 
-.about .content .blue_layer .gray_layer {
+.about .blue_layer .gray_layer {
     width: 95%;
     height: 100%;
     background: #f1f1f1;
@@ -269,7 +265,7 @@ ul {
     clip-path: polygon(0 0, 77% 0, 95% 100%, 0% 100%);
 }
 
-.about .content .blue_layer .gray_layer .image {
+.about .blue_layer .gray_layer .image {
     position: absolute;
     z-index: 4;
     left: 12%;
