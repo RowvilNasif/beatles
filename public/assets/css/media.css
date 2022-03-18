@@ -1,7 +1,51 @@
-@media (min-width: 992px) {
-    .navbar-expand-lg .navbar-collapse {
-        display: flex !important;
-        flex-basis: auto;
-        justify-content: end;
+    @media (min-width: 992px) {
+        .navbar-expand-lg .navbar-collapse {
+            display: flex !important;
+            flex-basis: auto;
+            justify-content: end;
+            margin-right: 14px;
+        }
+        ol,
+        ul {
+            padding-left: 10rem;
+        }
     }
-}
+    
+    @media(max-width: 991px) {
+        ol,
+        ul {
+            padding-left: 8rem;
+        }
+        dl,
+        ol,
+        ul {
+            margin-left: 10px;
+            margin-bottom: 1rem;
+        }
+    }
+    
+    @media(max-width: 767px) {
+        ol,
+        ul {
+            padding-left: 2rem;
+        }
+        dl,
+        ol,
+        ul {
+            margin-left: 16px;
+            margin-bottom: 1rem;
+        }
+    }
+    
+    @media(min-width: 1200px) {
+        ol,
+        ul {
+            padding-left: 14rem;
+        }
+        dl,
+        ol,
+        ul {
+            margin-left: 16px;
+            margin-bottom: 1rem;
+        }
+    }
