@@ -280,3 +280,104 @@ ul {
     margin-top: 89px;
     line-height: 24px;
 }
+
+.about .para .bottom {
+    margin-bottom: 100px;
+}
+
+
+/* ==========our service css========== */
+
+.our_service {
+    background-color: #fff;
+}
+
+.our_service .content {
+    position: relative;
+    z-index: 1;
+    margin-top: 75px;
+}
+
+.our_service button {
+    width: 70px;
+    height: 70px;
+    background-color: #f1f1f1;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    position: absolute;
+    left: 2%;
+    top: 2%;
+    z-index: 4;
+}
+
+.our_service .blue_layer {
+    width: 74px;
+    height: 74px;
+    border: 1px solid #f1f1f1;
+    border-radius: 50%;
+    position: relative;
+    left: 1%;
+    top: 1%;
+    z-index: 3;
+}
+
+.our_service .white_layer {
+    width: 80px;
+    height: 80px;
+    background-color: #fff;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    position: absolute;
+    left: 40%;
+    top: -21%;
+    z-index: 3;
+}
+
+.our_service .writting {
+    border: 2px solid #f1f1f1;
+    background-color: #f1f1f1;
+    text-align: center;
+    transition: all linear .3s;
+}
+
+.our_service .content {
+    border: 2px solid #f1f1f1;
+    background-color: #f1f1f1;
+    text-align: center;
+    transition: all linear .3s;
+}
+
+.our_service .content .writting h2 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    color: #353535;
+    margin-top: 50px;
+    text-transform: uppercase;
+}
+
+.our_service .content .writting p {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    color: #555;
+    padding: 22px 73px;
+}
+
+.our_service .content:hover .writting {
+    box-shadow: 0 0 12px rgb(0, 0, 0, 0.4)
+}
+
+.our_service .content:hover button {
+    background-color: #5bc5f4;
+    border: 1px solid #fff;
+}
+
+.our_service .content:hover .blue_layer {
+    border: 1px solid #5bc5f4;
+    background-color: #fff;
+}
+
+.our_service content:hover .white_layer {
+    background-color: #fff;
+}

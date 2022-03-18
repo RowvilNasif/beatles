@@ -49,3 +49,16 @@
             margin-bottom: 1rem;
         }
     }
+    
+    @media(max-width: 575px) {
+        .about .blue_layer .gray_layer .image {
+            left: -4%;
+        }
+        .about .blue_layer {
+            width: 41%;
+        }
+        .about .para {
+            padding-left: 245px;
+            margin-top: 45px;
+        }
+    }
