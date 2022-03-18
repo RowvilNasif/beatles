@@ -239,15 +239,16 @@ ul {
 
 /* ==========about css========== */
 
-.about .section_header {
+.about {
     margin-top: 60px;
 }
 
 .about .content .blue_layer {
     margin-top: 45px;
-    position: relative;
-    width: 44%;
-    height: 100%;
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 265px;
     background-color: #0872b9;
     z-index: 2;
     clip-path: polygon(0 0, 74% 0, 95% 100%, 0% 100%);
@@ -265,8 +266,21 @@ ul {
 }
 
 .about .content .blue_layer .gray_layer .image {
-    position: relative;
+    position: absolute;
     z-index: 4;
     left: 12%;
     top: 3%;
+}
+
+.about .content .para {
+    font-family: 'Open Sans', sans-serif;
+    color: #555;
+    font-size: 13px;
+    font-weight: 400;
+    margin-top: 89px;
+    line-height: 24px;
+}
+
+.about .content {
+    position: relative;
 }
