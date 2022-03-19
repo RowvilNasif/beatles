@@ -11,6 +11,25 @@
         }
     }
     
+    @media(min-width: 1200px) {
+        ol,
+        ul {
+            padding-left: 14rem;
+        }
+        dl,
+        ol,
+        ul {
+            margin-left: 5px;
+            margin-bottom: 1rem;
+        }
+    }
+    
+    @media(max-width: 1199px) {
+        p {
+            margin-top: 30px;
+        }
+    }
+    
     @media(max-width: 991px) {
         ol,
         ul {
@@ -19,8 +38,16 @@
         dl,
         ol,
         ul {
-            margin-left: 10px;
+            margin-left: 7px;
             margin-bottom: 1rem;
+        }
+        .about .blue_layer {
+            width: 120%;
+            right: 0%;
+            top: 0%;
+        }
+        .about p {
+            margin-top: 38px;
         }
     }
     
@@ -32,33 +59,41 @@
         dl,
         ol,
         ul {
-            margin-left: 16px;
+            margin-left: 11px;
             margin-bottom: 1rem;
         }
-    }
-    
-    @media(min-width: 1200px) {
-        ol,
-        ul {
-            padding-left: 14rem;
+        .about .blue_layer {
+            width: 67%;
+            clip-path: polygon(0 0, 93% 0, 95% 100%, 0% 100%);
+            margin-left: 16%;
         }
-        dl,
-        ol,
-        ul {
-            margin-left: 16px;
-            margin-bottom: 1rem;
+        .about .blue_layer .gray_layer {
+            clip-path: polygon(0 0, 93% 0, 95% 100%, 0% 100%);
+        }
+        .about p {
+            min-height: 169px;
+            margin-top: 0px;
         }
     }
     
     @media(max-width: 575px) {
         .about .blue_layer .gray_layer .image {
-            left: -4%;
+            left: 12%;
         }
         .about .blue_layer {
-            width: 41%;
+            width: 65%;
+            margin-left: 16%;
         }
         .about .para {
             padding-left: 245px;
             margin-top: 45px;
+        }
+        dl,
+        ol,
+        ul {
+            margin-bottom: 0rem;
+        }
+        .row {
+            --bs-gutter-x: 30.5rem;
         }
     }
