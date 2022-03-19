@@ -313,6 +313,7 @@ ul {
     left: 2%;
     top: 2%;
     z-index: 4;
+    transition: all linear .3s;
 }
 
 .our_service .blue_layer {
@@ -321,9 +322,10 @@ ul {
     border: 1px solid #f1f1f1;
     border-radius: 50%;
     position: relative;
-    left: 1%;
+    left: 0%;
     top: 1%;
     z-index: 3;
+    transition: all linear .3s;
 }
 
 .our_service .white_layer {
@@ -336,6 +338,7 @@ ul {
     left: 40%;
     top: -21%;
     z-index: 3;
+    transition: all linear .3s;
 }
 
 .our_service .writting {
@@ -420,8 +423,8 @@ ul {
 
 .portfolio .image button {
     position: absolute;
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     color: #fff;
     font-size: 20px;
     border: 1px solid #fff;
