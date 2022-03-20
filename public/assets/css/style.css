@@ -96,18 +96,6 @@ ul li {
     line-height: 30px;
 }
 
-dl,
-ol,
-ul {
-    margin-left: 0px;
-    margin-bottom: 1rem;
-}
-
-ol,
-ul {
-    padding-left: 3rem;
-}
-
 .topbar .social_links ul li a {
     margin-left: 25px;
     color: #e7e7e7;
@@ -191,7 +179,7 @@ ul {
     color: #fff;
     font-size: 11px;
     font-weight: 400;
-    margin-bottom: 34px;
+    margin-bottom: -142px;
     line-height: 24px;
 }
 
@@ -621,4 +609,130 @@ ul {
     color: #555;
     line-height: 24px;
     padding: 20px 70px;
+}
+
+
+/* ==========contact css========== */
+
+.contact {
+    background-color: #353535;
+    margin-top: 200px;
+}
+
+.contact .image {
+    line-height: 77px;
+}
+
+.contact .para {
+    margin: 15px 0 38px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    color: #f1f1f1;
+    line-height: 24px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact h2.heading {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #fff;
+    line-height: 77px;
+}
+
+.contact .item {
+    display: flex;
+    justify-content: end;
+    text-align: left;
+    margin-right: 11%;
+}
+
+.contact .item.dfr {
+    margin-right: 45%;
+}
+
+.contact .item button {
+    width: 37px;
+    height: 37px;
+    border: 1px solid #5bc5f4;
+    border-radius: 50%;
+    background-color: #5bc5f4;
+    color: #fff;
+    font-size: 20px;
+}
+
+.contact .item .contact_way {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: #f1f1f1;
+    line-height: 24px;
+    margin-left: 10px;
+}
+
+.contact .item .contact_way h2 {
+    font-size: 13px;
+}
+
+.contact .list {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    text-transform: capitalize;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact .list ul li {
+    display: block;
+    margin-bottom: 14px;
+}
+
+.contact .list ul li a {
+    color: #fff;
+    transition: all linear .3s;
+}
+
+.contact .list ul li a:hover {
+    color: #5bc5f4;
+}
+
+ol,
+ul {
+    padding-left: 0rem;
+}
+
+.contact .flickr_image {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 27px;
+}
+
+.contact .flickr_image .image {
+    flex-basis: 33%;
+}
+
+.contact h2.heading.flickr {
+    margin-left: 27px;
+}
+
+
+/* ==========footer css========== */
+
+.footer {
+    background-color: #555555;
+}
+
+.footer .copyright {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: #f1f1f1;
+    line-height: 29px;
+    text-align: center;
+}
+
+.footer .copyright .beat {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
 }
