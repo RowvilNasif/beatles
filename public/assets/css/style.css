@@ -276,7 +276,7 @@ ul {
     top: 3%;
 }
 
-.about p {
+.about .writting {
     min-height: 265px;
     font-family: 'Open Sans', sans-serif;
     color: #555;
@@ -549,4 +549,76 @@ ul {
 
 .our_team .image:hover h3 {
     color: #5ac5f4;
+}
+
+
+/* ==========Testimonial css========== */
+
+.testimonial .item {
+    position: relative;
+}
+
+.testimonial .white_layer {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    content: '';
+    left: 43%;
+    top: 21%;
+    z-index: 2;
+    background-color: #f1f1f1;
+    clip-path: circle(50% at 50% 50%);
+}
+
+.testimonial .white_layer .image {
+    position: relative;
+    z-index: 3;
+    right: 14%;
+    top: 2%;
+}
+
+.testimonial .box {
+    position: relative;
+    left: 47%;
+    top: 60%;
+    width: 33px;
+    height: 33px;
+    background-color: #f1f1f1;
+    transform: rotate(45deg);
+}
+
+.testimonial .content {
+    background-color: #f1f1f1;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    position: relative;
+    left: 0%;
+    top: 52%;
+}
+
+.testimonial .content .name {
+    font-weight: 500;
+    font-size: 17px;
+    color: #353535;
+    padding-top: 20px;
+    text-transform: uppercase;
+}
+
+.testimonial .content .star {
+    font-size: 14px;
+    color: #5bc5f4;
+}
+
+.testimonial .content .post {
+    font-size: 15px;
+    color: #555;
+    text-transform: capitalize;
+}
+
+.testimonial .content .para {
+    font-weight: 400;
+    font-size: 15px;
+    color: #555;
+    line-height: 24px;
+    padding: 20px 70px;
 }
