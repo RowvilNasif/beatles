@@ -1,222 +1,153 @@
-@media (min-width: 992px) {
-    .navbar-expand-lg .navbar-collapse {
-        display: flex !important;
-        flex-basis: auto;
-        justify-content: end;
-        margin-right: 14px;
+    @media (min-width: 992px) {
+        .navbar-expand-lg .navbar-collapse {
+            display: flex !important;
+            flex-basis: auto;
+            justify-content: end;
+        }
     }
-}
-
-@media(max-width:1599px) {
-    .topbar .social_links ul {
-        padding-left: 18.5rem;
+    
+    @media(max-width:1599px) {
+        .our_team .image::after {
+            height: 85.5%;
+        }
     }
-    .contact .flickr_image {
-        margin-left: 63px;
+    
+    @media(max-width: 1399px) {
+        .our_team .image::after {
+            height: 83%;
+        }
     }
-    .contact h2.heading.flickr {
-        margin-left: 57px;
+    
+    @media(max-width: 1199px) {
+        .about .writting {
+            margin-top: 30px;
+        }
+        .our_service .blue_layer {
+            left: 0;
+        }
+        .our_team .image::after {
+            height: 81%;
+        }
+        .portfolio .image button {
+            width: 40px;
+            height: 40px;
+        }
+        .testimonial .box {
+            left: 47%;
+        }
+        .testimonial .section_header {
+            margin-bottom: 12%;
+        }
     }
-}
-
-@media(max-width: 1399px) {
-    .topbar .social_links ul {
-        padding-left: 14rem;
+    
+    @media(max-width: 991px) {
+        .about .blue_layer {
+            width: 120%;
+            right: 0%;
+            top: 0%;
+        }
+        .about .writting {
+            margin-top: 38px;
+        }
+        .our_service .blue_layer {
+            top: 0;
+        }
+        .our_team .image::after {
+            height: 86.5%;
+        }
+        .testimonial .box {
+            left: 48%;
+            top: 25%;
+        }
+        .testimonial .content {
+            margin-top: 65px;
+        }
+        .testimonial .white_layer {
+            top: -5%;
+        }
+        .testimonial .section_header {
+            margin-bottom: 9%;
+        }
     }
-    dl,
-    ol,
-    ul {
-        margin-left: 5px;
-        margin-bottom: 1rem;
+    
+    @media(max-width: 767px) {
+        .about .blue_layer {
+            width: 67%;
+            clip-path: polygon(0 0, 93% 0, 95% 100%, 0% 100%);
+            right: 15%;
+        }
+        .about .blue_layer .gray_layer {
+            width: 94%;
+            left: 3%;
+            top: 0%;
+            clip-path: polygon(0 0, 93% 0, 95% 100%, 0% 100%);
+        }
+        .about .writting {
+            min-height: 169px;
+            margin-top: 0px;
+        }
+        .about .para {
+            text-align: center;
+        }
+        .our_service .white_layer {
+            left: 42%;
+        }
+        .our_team .image::after {
+            height: 82.5%;
+        }
+        .testimonial .box {
+            top: 23%;
+        }
+        .our_service .blue_layer {
+            width: 76px;
+            height: 76px;
+        }
     }
-}
-
-@media(max-width: 1199px) {
-    .about .writting {
-        margin-top: 30px;
+    
+    @media(max-width: 575px) {
+        .topbar .welcome_text {
+            text-align: center;
+            margin-top: 10px;
+        }
+        .topbar .social_links ul {
+            text-align: center;
+            margin-right: 9%;
+        }
+        .topbar .social_links ul li a {
+            margin-left: 14px;
+        }
+        .banner .content {
+            text-align: center;
+        }
+        .about .blue_layer .gray_layer .image {
+            left: 12%;
+        }
+        .about .blue_layer {
+            width: 65%;
+            margin-left: 16%;
+        }
+        .our_service .white_layer {
+            left: 46%;
+        }
+        .portfolio .image button {
+            width: 48px;
+            height: 48px;
+            font-size: 19px;
+        }
+        .portfolio .image {
+            max-width: 300px;
+        }
+        .our_team .image {
+            max-width: 300px;
+        }
+        .our_team .image::after {
+            height: 84.5%;
+        }
+        .our_service .blue_layer {
+            width: 74px;
+            height: 76px;
+        }
+        .our_service .white_layer {
+            width: 79px;
+        }
     }
-    .our_service .blue_layer {
-        left: 0;
-    }
-    .our_team .image::after {
-        height: 90%;
-    }
-    .portfolio .image button {
-        width: 40px;
-        height: 40px;
-    }
-    .topbar .social_links ul {
-        padding-left: 9.5rem;
-    }
-    .testimonial .box {
-        left: 46%;
-        width: 50px;
-        height: 40px;
-    }
-    .testimonial .white_layer {
-        left: 41.5%;
-        top: 26%;
-    }
-    .testimonial .content .para {
-        padding: 0px 18px 20px;
-    }
-    .contact .item {
-        margin-right: -1%;
-    }
-    .contact .item.dfr {
-        margin-right: 38%;
-    }
-    .contact .flickr_image {
-        margin-left: -9px;
-    }
-    .contact h2.heading.flickr {
-        margin-left: -7px;
-    }
-}
-
-@media(max-width: 991px) {
-    .topbar .social_links ul {
-        padding-left: 7.5rem;
-    }
-    dl,
-    ol,
-    ul {
-        margin-left: 13px;
-        margin-bottom: 1rem;
-    }
-    .about .blue_layer {
-        width: 120%;
-        right: 0%;
-        top: 0%;
-    }
-    .about .writting {
-        margin-top: 38px;
-    }
-    .our_service .blue_layer {
-        top: 0;
-    }
-    .our_team .image::after {
-        height: 93%;
-    }
-    .testimonial .item.second {
-        top: 18%;
-    }
-    .testimonial .box {
-        left: 47%;
-        width: 38px;
-        height: 38px;
-        top: 63%;
-    }
-    .testimonial .white_layer {
-        left: 43.5%;
-        top: 17%;
-    }
-    .contact .item.dfr {
-        margin-right: 48%;
-    }
-    .contact .item {
-        margin-right: 17%;
-    }
-    .contact .flickr_image {
-        margin-left: 66px;
-    }
-    .contact h2.heading.flickr {
-        margin-left: 66px;
-    }
-}
-
-@media(max-width: 767px) {
-    .topbar .social_links ul {
-        padding-left: 1.5rem;
-        margin-left: 16px;
-        margin-bottom: 1rem;
-    }
-    .about .blue_layer {
-        width: 67%;
-        clip-path: polygon(0 0, 93% 0, 95% 100%, 0% 100%);
-        right: 18%;
-    }
-    .about .blue_layer .gray_layer {
-        clip-path: polygon(0 0, 93% 0, 95% 100%, 0% 100%);
-    }
-    .about .writting {
-        min-height: 169px;
-        margin-top: 0px;
-    }
-    .our_service .white_layer {
-        left: 42%;
-    }
-    .our_team .image::after {
-        height: 90%;
-    }
-    .contact ul.first {
-        margin-left: 0px;
-        margin-bottom: 1rem;
-    }
-    .contact h2.heading.flickr {
-        margin-left: 29px;
-    }
-    .contact .flickr_image {
-        margin-left: 29px;
-    }
-}
-
-@media(max-width: 575px) {
-    .about .blue_layer .gray_layer .image {
-        left: 12%;
-    }
-    .about .blue_layer {
-        width: 65%;
-        margin-left: 16%;
-    }
-    .about .para {
-        padding-left: 245px;
-        margin-top: 45px;
-    }
-    dl,
-    ol,
-    ul {
-        margin-bottom: 0rem;
-    }
-    .row {
-        --bs-gutter-x: 30.5rem;
-    }
-    .our_service .white_layer {
-        left: 46%;
-    }
-    .portfolio .image button {
-        position: absolute;
-        width: 80px;
-        height: 80px;
-        font-size: 28px;
-    }
-    .our_team .image::after {
-        height: 97.5%;
-    }
-    .testimonial .white_layer {
-        left: 46%;
-        top: 22%;
-    }
-    .contact .item.dfr {
-        margin-right: 74%;
-    }
-    .contact .item {
-        margin-right: 58%;
-    }
-    .contact ul.first {
-        margin-left: 6px;
-    }
-    .contact h2.heading.flickr {
-        margin-left: 252px;
-    }
-    .contact .flickr_image {
-        margin-left: 134px;
-        margin-right: 72px;
-    }
-    .contact h2.heading {
-        margin-left: 243px;
-    }
-    .contact .image {
-        margin-left: 238px;
-    }
-}

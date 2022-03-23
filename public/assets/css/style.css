@@ -83,17 +83,17 @@ ul li {
     background-color: #0872b9;
 }
 
-.topbar .row .content {
-    display: flex;
-    justify-content: space-between;
-}
-
 .topbar .welcome_text {
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     font-size: 14px;
     color: #fff;
     line-height: 30px;
+}
+
+.topbar .social_links ul {
+    display: block;
+    text-align: right;
 }
 
 .topbar .social_links ul li a {
@@ -124,6 +124,20 @@ ul li {
 }
 
 .header .navbar ul li a:hover {
+    color: #0872b9;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #000;
+}
+
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .show>.nav-link {
+    color: #0872b9;
+}
+
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
     color: #0872b9;
 }
 
@@ -179,22 +193,7 @@ ul li {
     color: #fff;
     font-size: 11px;
     font-weight: 400;
-    margin-bottom: -142px;
     line-height: 24px;
-}
-
-.navbar-light .navbar-nav .nav-link {
-    color: #000;
-}
-
-.navbar-light .navbar-nav .nav-link.active,
-.navbar-light .navbar-nav .show>.nav-link {
-    color: #0872b9;
-}
-
-.navbar-light .navbar-nav .nav-link:focus,
-.navbar-light .navbar-nav .nav-link:hover {
-    color: #0872b9;
 }
 
 .banner .content button {
@@ -213,13 +212,13 @@ ul li {
     border: 1px solid #0872b9;
 }
 
-.banner .content button.contact {
+.banner .content button.contact_button {
     background-color: transparent;
     border: 1px solid #fff;
     transition: all linear .3s;
 }
 
-.banner .content button.contact:hover {
+.banner .content button.contact_button:hover {
     background-color: #0872b9;
     border: 1px solid #0872b9;
 }
@@ -455,7 +454,7 @@ ul li {
     position: absolute;
     content: '';
     width: 0%;
-    height: 91%;
+    height: 83%;
     top: 0;
     right: 0;
     z-index: 2;
@@ -503,15 +502,15 @@ ul li {
 }
 
 .our_team .image button.linkedin {
-    top: 32%;
+    top: 29%;
 }
 
 .our_team .image button.pinterest {
-    top: 51%;
+    top: 46%;
 }
 
 .our_team .image button.twitter {
-    top: 71%;
+    top: 64%;
 }
 
 .our_team h3 {
@@ -542,6 +541,10 @@ ul li {
 
 /* ==========Testimonial css========== */
 
+.testimonial .section_header {
+    margin-bottom: 9%;
+}
+
 .testimonial .item {
     position: relative;
 }
@@ -551,11 +554,12 @@ ul li {
     height: 80px;
     position: absolute;
     content: '';
-    left: 43%;
-    top: 21%;
+    left: 50%;
+    top: -29%;
     z-index: 2;
     background-color: #f1f1f1;
     clip-path: circle(50% at 50% 50%);
+    transform: translateX(-50%);
 }
 
 .testimonial .white_layer .image {
@@ -567,8 +571,8 @@ ul li {
 
 .testimonial .box {
     position: relative;
-    left: 47%;
-    top: 60%;
+    left: 48%;
+    top: 6%;
     width: 33px;
     height: 33px;
     background-color: #f1f1f1;
@@ -579,9 +583,6 @@ ul li {
     background-color: #f1f1f1;
     text-align: center;
     font-family: 'Oswald', sans-serif;
-    position: relative;
-    left: 0%;
-    top: 52%;
 }
 
 .testimonial .content .name {
@@ -616,7 +617,6 @@ ul li {
 
 .contact {
     background-color: #353535;
-    margin-top: 200px;
 }
 
 .contact .image {
@@ -644,13 +644,6 @@ ul li {
 
 .contact .item {
     display: flex;
-    justify-content: end;
-    text-align: left;
-    margin-right: 11%;
-}
-
-.contact .item.dfr {
-    margin-right: 45%;
 }
 
 .contact .item button {
@@ -684,6 +677,11 @@ ul li {
     justify-content: space-between;
 }
 
+.contact .list ul {
+    padding-left: 0rem;
+    flex-basis: 50%;
+}
+
 .contact .list ul li {
     display: block;
     margin-bottom: 14px;
@@ -698,23 +696,13 @@ ul li {
     color: #5bc5f4;
 }
 
-ol,
-ul {
-    padding-left: 0rem;
-}
-
 .contact .flickr_image {
     display: flex;
     justify-content: space-between;
-    margin-left: 27px;
 }
 
 .contact .flickr_image .image {
     flex-basis: 33%;
-}
-
-.contact h2.heading.flickr {
-    margin-left: 27px;
 }
 
 
