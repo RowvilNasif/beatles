@@ -88,19 +88,19 @@ ul li {
     font-weight: 400;
     font-size: 14px;
     color: #fff;
-    line-height: 30px;
+    line-height: 40px;
 }
 
 .topbar .social_links ul {
     display: block;
     text-align: right;
+    margin-top: 8px;
 }
 
 .topbar .social_links ul li a {
     margin-left: 25px;
     color: #e7e7e7;
     font-size: 16px;
-    line-height: 30px;
     transition: all linear .3s;
 }
 
@@ -290,7 +290,25 @@ ul li {
     margin-top: 75px;
 }
 
-.our_service button {
+.our_service .previous-service,
+.our_service .next-service {
+    width: 40px;
+    height: 40px;
+    background-color: #f1f1f1;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    transition: all linear .3s;
+    color: #0872b9;
+}
+
+.our_service .previous-service:hover,
+.our_service .next-service:hover {
+    background-color: #0872b9;
+    border: 1px solid #0872b9;
+    color: #fff;
+}
+
+.our_service .buttons {
     width: 70px;
     height: 70px;
     background-color: #f1f1f1;
@@ -301,6 +319,12 @@ ul li {
     top: 2%;
     z-index: 4;
     transition: all linear .3s;
+}
+
+.our_service .buttons .image {
+    position: relative;
+    left: 19%;
+    top: 2%;
 }
 
 .our_service .blue_layer {
@@ -617,6 +641,7 @@ ul li {
 
 .contact {
     background-color: #353535;
+    margin-top: 75px;
 }
 
 .contact .image {
@@ -716,11 +741,21 @@ ul li {
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     color: #f1f1f1;
-    line-height: 29px;
+    line-height: 30px;
     text-align: center;
+    margin-top: 17px;
 }
 
 .footer .copyright .beat {
     font-family: 'Oswald', sans-serif;
     font-weight: 500;
+}
+
+.banner .box {
+    margin-top: 10px;
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    position: relative;
+    z-index: 3;
 }

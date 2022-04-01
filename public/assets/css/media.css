@@ -16,6 +16,9 @@
         .our_team .image::after {
             height: 83%;
         }
+        .about .writting {
+            margin-top: 24px;
+        }
     }
     
     @media(max-width: 1199px) {

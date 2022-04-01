@@ -20,6 +20,9 @@
     <!-- lokeshdhaker css -->
     <link href="path/to/lightbox.css" rel="stylesheet" />
     <link rel="stylesheet" href="./public/assets/css/lightbox.min.css">
+    <!-- slick css -->
+    <link rel="stylesheet" href="./public/assets/css/slick-theme.css">
+    <link rel="stylesheet" href="./public/assets/css/slick.css">
     <!-- Custome CSS -->
     <link rel="stylesheet" href="./public/assets/css/style.css">
     <link rel="stylesheet" href="./public/assets/css/media.css">
@@ -91,14 +94,17 @@
     <div class="banner">
         <div class="container">
             <div class="row">
-                <div class="col-sm-3 col-lg-7 col-xl-6"></div>
+                <div class="col-sm-3 col-lg-7 col-xl-6">
+                    <div class="box" id="box"></div>
+                </div>
                 <div class="col-sm-9 col-lg-5 col-xl-6">
                     <div class="content">
-                        <h2 class="heading top">hi! we are</h2>
-                        <h3 class="heading bottom">creative designer</h3>
-                        <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. </p>
+                        <h2 class="heading top">hi! we need to</h2>
+                        <h3 class="heading bottom">save nature</h3>
+                        <p class="para">The Earth we live in abounds with wonders, mysteries and miracles. Out of these, the most spectacular, spontaneous and splendid is what we call “Nature”. Mother Nature with unending powers to protect life when it should or uproot
+                            life if it must.</p>
                         <button class="hire_us">hire us</button>
-                        <button class="contact_button">contact</button>
+                        <button class="contact_button" id="fade">contact</button>
                     </div>
                 </div>
             </div>
@@ -127,15 +133,8 @@
                 </div>
                 <div class="para col-12 col-md-6 col-lg-7 my-1">
                     <p class="writting">
-                        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                            ididunt ut
-                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                            ullamco
-                            laboris nisi ut aliquip ex ea commodo consequat.</span>
-                        <span>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                            nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-                            officiaeserunt mollit anim id est laborum. Sed ut perspiciatis
-                            unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</span>
+                        <span>Nature has been a source of inspiration and delight to mankind. It is an endless source of joy. Dew drops on the green grass look like pearls. Sunrise is a lovely scene of Nature. Setting Sun, starry night, silvery light of the Moon, snow-covered mountains, deep and dark forests, scent and fragrance of flowers are some of the beauties of Nature.</span>
+                        <span>The chirping of birds in trees has a music of its own. In Spring, Nature is at her best. Blooming flowers of different hues fill the air with fragrance. The beauties of Nature soothe our eyes, gladden our hearts and ennoble our souls.</span>
                     </p>
                 </div>
             </div>
@@ -152,37 +151,76 @@
                         </h2>
                     </div>
                 </div>
-                <div class="content col-sm-12 col-md-6 col-xl-4">
-                    <div class="white_layer">
-                        <div class="blue_layer">
-                            <button><img src="./public/assets/img/service1.png" alt=""></button>
-                        </div>
-                    </div>
-                    <div class="writting">
-                        <h2>Graphic Design</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetpisg elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    </div>
+                <div class="d-flex justify-content-between">
+                    <button type="button" class="previous-service"><i class="fa fa-chevron-left"></i></button>
+                    <button type="button" class="next-service"><i class="fa fa-chevron-right"></i></button>
                 </div>
-                <div class="content col-sm-12 col-md-6 col-xl-4">
-                    <div class="white_layer">
-                        <div class="blue_layer">
-                            <button><img src="./public/assets/img/service2.png" alt=""></button>
+                <div class="beatle-service-slick">
+                    <div class="content">
+                        <div class="white_layer">
+                            <div class="blue_layer">
+                                <button class="buttons"><div class="image"><img src="./public/assets/img/service1.png" alt=""></div></button>
+                            </div>
+                        </div>
+                        <div class="writting">
+                            <h2>Graphic Design</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetpisg elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                         </div>
                     </div>
-                    <div class="writting">
-                        <h2>Graphic Design</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetpisg elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    </div>
-                </div>
-                <div class="content col-sm-12 col-md-6 col-xl-4">
-                    <div class="white_layer">
-                        <div class="blue_layer">
-                            <button><img src="./public/assets/img/service3.png" alt=""></button>
+                    <div class="content">
+                        <div class="white_layer">
+                            <div class="blue_layer">
+                                <button class="buttons"><div class="image"><img src="./public/assets/img/service2.png" alt=""></div></button>
+                            </div>
+                        </div>
+                        <div class="writting">
+                            <h2>Graphic Design</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetpisg elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                         </div>
                     </div>
-                    <div class="writting">
-                        <h2>Graphic Design</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetpisg elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <div class="content">
+                        <div class="white_layer">
+                            <div class="blue_layer">
+                                <button class="buttons"><div class="image"><img src="./public/assets/img/service3.png" alt=""></div></button>
+                            </div>
+                        </div>
+                        <div class="writting">
+                            <h2>Graphic Design</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetpisg elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="white_layer">
+                            <div class="blue_layer">
+                                <button class="buttons"><div class="image"><img src="./public/assets/img/service1.png" alt=""></div></button>
+                            </div>
+                        </div>
+                        <div class="writting">
+                            <h2>Graphic Design</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetpisg elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="white_layer">
+                            <div class="blue_layer">
+                                <button class="buttons"><div class="image"><img src="./public/assets/img/service2.png" alt=""></div></button>
+                            </div>
+                        </div>
+                        <div class="writting">
+                            <h2>Graphic Design</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetpisg elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="white_layer">
+                            <div class="blue_layer">
+                                <button class="buttons"><div class="image"><img src="./public/assets/img/service3.png" alt=""></div></button>
+                            </div>
+                        </div>
+                        <div class="writting">
+                            <h2>Graphic Design</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetpisg elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -280,7 +318,7 @@
                                     class="fa fa-pinterest-p" aria-hidden="true"></i></button></a>
                         <a href="https://twitter.com/login?lang=en" target="blank"><button class="twitter"><i
                                     class="fa fa-twitter" aria-hidden="true"></i></button></a>
-                        <h3><span>sajal sarder</span></h3>
+                        <h3><span>thomas charlie</span></h3>
                         <p>web designer</p>
                     </div>
                 </div>
@@ -295,7 +333,7 @@
                                     class="fa fa-pinterest-p" aria-hidden="true"></i></button></a>
                         <a href="https://twitter.com/login?lang=en" target="blank"><button class="twitter"><i
                                     class="fa fa-twitter" aria-hidden="true"></i></button></a>
-                        <h3>sakeba aney</h3>
+                        <h3>hermony granger</h3>
                         <p>web designer</p>
                     </div>
                 </div>
@@ -310,7 +348,7 @@
                                     class="fa fa-pinterest-p" aria-hidden="true"></i></button></a>
                         <a href="https://twitter.com/login?lang=en" target="blank"><button class="twitter"><i
                                     class="fa fa-twitter" aria-hidden="true"></i></button></a>
-                        <h3>abs ujjal</h3>
+                        <h3>ron weasaly</h3>
                         <p>web designer</p>
                     </div>
                 </div>
@@ -325,7 +363,7 @@
                                     class="fa fa-pinterest-p" aria-hidden="true"></i></button></a>
                         <a href="https://twitter.com/login?lang=en" target="blank"><button class="twitter"><i
                                     class="fa fa-twitter" aria-hidden="true"></i></button></a>
-                        <h3>aney irin</h3>
+                        <h3>emilia clerk</h3>
                         <p>web designer</p>
                     </div>
 
@@ -344,44 +382,46 @@
                         </h2>
                     </div>
                 </div>
-                <div class=" item my-2 col-sm-12 col-lg-6">
-                    <div class="white_layer">
-                        <div class="image">
-                            <img src="./public/assets/img/testimonial_person1.png" alt="">
+                <div class="beatle_testimonial-slick">
+                    <div class=" item">
+                        <div class="white_layer">
+                            <div class="image">
+                                <img src="./public/assets/img/testimonial_person1.png" alt="">
+                            </div>
+                        </div>
+                        <div class="box"></div>
+                        <div class="content">
+                            <h3 class="name">albus dumbeldor</h3>
+                            <p class="star">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                            </p>
+                            <h2 class="post">chairman</h2>
+                            <p class="para">It was through Dumbledore that resistance to the rise of Lord Voldemort was formed. He founded and led the Order of the Phoenix during the First Wizarding War.</p>
                         </div>
                     </div>
-                    <div class="box"></div>
-                    <div class="content">
-                        <h3 class="name">shahin alam</h3>
-                        <p class="star">
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star-half-o" aria-hidden="true"></i>
-                        </p>
-                        <h2 class="post">chairman</h2>
-                        <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    </div>
-                </div>
-                <div class=" item second my-2  col-sm-12 col-lg-6">
-                    <div class="white_layer second">
-                        <div class="image">
-                            <img src="./public/assets/img/testimonial_person2.png" alt="">
+                    <div class=" item second">
+                        <div class="white_layer second">
+                            <div class="image">
+                                <img src="./public/assets/img/testimonial_person2.png" alt="">
+                            </div>
                         </div>
-                    </div>
-                    <div class="box second"></div>
-                    <div class="content second">
-                        <h3 class="name">mahadi tahsan</h3>
-                        <p class="star">
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star-half-o" aria-hidden="true"></i>
-                        </p>
-                        <h2 class="post">chairman</h2>
-                        <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <div class="box second"></div>
+                        <div class="content second">
+                            <h3 class="name">snape doglase</h3>
+                            <p class="star">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                            </p>
+                            <h2 class="post">chairman</h2>
+                            <p class="para">Snape became involved with the bullies in Slytherin House, many of whom were pure-blood supremacists. This put his friendship with Lily, a Muggle-born, under great strain.</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -396,9 +436,8 @@
                     <div class="image"><img src="./public/assets/img/logo_white.png" alt="">
                     </div>
                     <p class="para">
-                        <span>Lorem ipsum dolor sit amet, conser adipisicing elit, sed do eiumod apor incididunt ut
-                            labore et dolore magna aliqua.</span>
-                        <span>Lorem ipsum dolor sit amet, conser adipisicing elit.</span>
+                        <span>Nature is made of everything we see around us – trees, flowers, plants, animals, sky, mountains, forests and more. Human beings depend on nature to stay alive.</span>
+                        <span>Nature helps us breathe, gives us food, water, shelter, medicines, and clothes. We find many colors in nature which make the Earth beautiful.</span>
                     </p>
                 </div>
                 <div class="col-12 col-sm-6 col-md-4 col-lg-3">
@@ -409,7 +448,7 @@
                         <div class="no_work"><button><i class="fa fa-phone" aria-hidden="true"></i> </button></div>
                         <div class="contact_way">
                             <h2>+0168-1133804</h2>
-                            <h2>+0168-1133804</h2>
+                            <h2>+0177-9020230</h2>
                         </div>
                     </div>
                     <div class="item my-2">
@@ -483,6 +522,8 @@
     <script src="./public/assets/js/bootstrap.bundle.min.js"></script>
     <!-- jquery -->
     <script src="./public/assets/js/jquery-1.12.4.min.js"></script>
+    <!-- slick js -->
+    <script src="./public/assets/js/slick.min.js"></script>
     <!-- lokeshdhaker js -->
     <script src="./public/assets/js/lightbox.min.js"></script>
     <!-- main js -->
